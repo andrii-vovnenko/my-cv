@@ -5,8 +5,7 @@ body {
 }
 
 header {
-  background-color: #000;
-  color: #fff;
+  background-color: #6db4d9;
   padding: 50px 25px;
   display: flex;
   gap: 50px;
@@ -15,7 +14,20 @@ header {
 .logo {
   width: 180px;
   height: 180px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border-color: #000;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.logo > img {
+  width: auto;
+  height: 100%;
+  margin-left: 20px;
 }
 
 .about {
@@ -29,6 +41,26 @@ header {
   width: 100%;
 }
 
+main {
+  column-count: 2;
+  column-gap: 10px;
+}
+
+.section {
+  font-size: 22px;
+  padding: 20px 0;
+  break-inside: avoid;
+}
+
+h3 {
+  color: #6db4d9;
+  margin: 0;
+}
+
+hr {
+  border-color: #6db4d9;
+}
+
 @media (max-width: 960px) {
   header {
     flex-wrap: wrap;
@@ -36,5 +68,10 @@ header {
   
   .about {
     gap: 20px;
+  }
+
+  main {
+    column-count: 1;
+    padding: 10px;
   }
 }
