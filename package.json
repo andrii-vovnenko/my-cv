@@ -1,0 +1,20 @@
+{
+  "name": "my-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-andriiVovnenko1992:andriiVovnenko1992/my-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.1.1"
+  }
+}
