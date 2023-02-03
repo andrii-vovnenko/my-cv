@@ -110,3 +110,12 @@ p:not(:first-child) {
     padding: 0 10px;
   }
 }
+
+@media print {
+  header {
+    border-bottom: 1px black solid;
+    background-color: var(--blue-color) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
