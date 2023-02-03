@@ -88,6 +88,9 @@ h3 {
 p {
   margin: 0;
   padding: 0;
+}
+
+p:not(:first-child) {
   text-indent: 1rem;
 }
 
