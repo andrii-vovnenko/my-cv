@@ -100,6 +100,11 @@ p:not(:first-child) {
     padding: 20px 5px;
     gap: 10px;
   }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
   
   .about {
     gap: 20px;
