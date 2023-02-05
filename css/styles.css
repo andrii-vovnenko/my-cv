@@ -94,6 +94,11 @@ p:not(:first-child) {
   text-indent: 1rem;
 }
 
+.cmp_name {
+  background-color: var(--blue-color);
+  padding: 2px;
+}
+
 @media (max-width: 960px) {
   header {
     flex-wrap: wrap;
