@@ -99,6 +99,86 @@ p:not(:first-child) {
   padding: 2px;
 }
 
+/* timeline start */
+.timeline {
+  margin: 10% 0;
+}
+.timeline__list {
+  list-style: none;
+  position: relative;
+  margin-left: -30px;
+}
+.timeline__list::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed #000;
+}
+.timeline__row {
+  position: relative;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 250px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
+}
+.timeline__row:not(:first-child) {
+  margin-top: 60px;
+}
+.timeline__row > span {
+  width: 2px;
+  height: 100%;
+  background: #000;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+.timeline__row > span::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  position: absolute;
+  background: #86b7e7;
+  left: -5px;
+  top: 0;
+}
+.timeline__row > span::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  position: absolute;
+  background: #86b7e7;
+  left: -5px;
+  top: 0;
+}
+.timeline__row > span::after {
+  top: 100%;
+}
+.timeline__title {
+  font-weight: 600;
+}
+
+.timeline__date {
+  height: 100%;
+}
+.timeline__date > span {
+  position: absolute;
+  font-size: 16px;
+  left: 10px;
+  font-weight: bold;
+}
+.timeline__date > span:first-child {
+  top: -30%;
+}
+.timeline__date > span:last-child {
+  top: 105%;
+}
+/* timeline end */
 @media (max-width: 960px) {
   header {
     flex-wrap: wrap;
