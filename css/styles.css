@@ -213,4 +213,10 @@ p:not(:first-child) {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+  .section {
+    break-inside: auto;
+  }
+  .work-history {
+    break-inside: avoid;
+  }
 }
