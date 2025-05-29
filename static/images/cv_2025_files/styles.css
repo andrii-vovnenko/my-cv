@@ -72,7 +72,7 @@ main {
 
 .section {
   padding: 10px 0;
-  /* break-inside: avoid; */
+  break-inside: avoid;
 }
 
 h3.section__title {
@@ -215,21 +215,15 @@ p:not(:first-child) {
 
 @media print {
   header {
-    /* border-bottom: 1px black solid; */
-    /* background-color: var(--blue-color) !important; */
+    border-bottom: 1px black solid;
+    background-color: var(--blue-color) !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-    padding: 0 0 1rem 0;
   }
   .section {
-    /* break-inside: avoid; */
-    /* padding-top: 0.5rem; */
-    padding: 0;
+    break-inside: auto;
   }
   .work-history {
-    /* break-inside: avoid; */
-  }
-  .work-history-item {
     break-inside: avoid;
   }
 }
